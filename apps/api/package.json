@@ -1,0 +1,29 @@
+{
+  "name": "@flowspace/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --conditions=source src/index.ts",
+    "build": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@flowspace/db": "workspace:*",
+    "@flowspace/types": "workspace:*",
+    "@flowspace/validators": "workspace:*",
+    "@hono/node-server": "^1.14.3",
+    "@hono/zod-validator": "^0.4.3",
+    "better-auth": "^1.2.8",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.7.11",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.4",
+    "tsx": "^4.22.3",
+    "typescript": "~6.0.2"
+  }
+}
